@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.p1{
+    border: double 3px black;
+    background-color: #A63d40;
+    padding: 15px;
+    width: 75px;
+}
+
+
+.p2{
+    border: double 3px black;
+    background-color: #e9b872;
+    padding: 15px;
+    width: 75px;
+}
+
+
+.p3{
+    border: double 3px black;
+    background-color: #90a959;
+    padding: 15px;
+    width: 75px;
+}
+
+.flexPadre{
+    display: flex;
+    background-color: #6494aa;
+    padding: 20px;
+    flex-direction: row-reverse;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+ 
+}
+
+.menu li{
+list-style: none;
+border: #151515 dotted 3px;
+padding: 15px;
+background-color: #6494aa;
+margin-bottom: 15px;
+}
+
+.menu a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.menu a :hover{
+    color: #151515;
+    font-weight: 900;
+}
+
+.menu li:hover{
+    background-color: #90a959;
+}
+
+.flexColumn{
+    display: flex;
+    background-color: #d5d33e;
+    padding: 20px;
+    flex-direction: column;   
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* VH es viewport height o sea una unidad de medida relativa */
+    height: 50vh;
+}
+/* EJEMPLO DIAPOSITIVA */
+.header{
+    background-color: #e9b872;
+    height: 20vh;
+}
+
+.main{
+background-color: #A63d40;
+height: 70vh;
+display: flex;
+}
+
+.footer{
+background-color: #6494aa;
+height: 10vh;
+}
+
+.section{
+    background-color: rgb(55, 55, 206);
+    width: 50%;
+    height: 100%;
+}
+
+.article{
+    background-color: rgb(55, 178, 206);
+    width: 25%;
+    height: 100%;
+}
+
+.aside{
+    background-color: rgb(55, 206, 78);
+    width: 25%;
+    height: 100%;
+}

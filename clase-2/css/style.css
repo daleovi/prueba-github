@@ -1,0 +1,43 @@
+/*1. Selector del tipo de etiquetas */
+*{
+margin: 0;
+padding: 0;
+border: 0;    
+font-family: Arial, Helvetica, sans-serif;    
+}
+h1 {
+    color: #ecba82;
+}
+
+ul li {
+    color: #81c14b;
+}
+
+/*2. Selector de tipo de clase */
+    .tituloTabla{
+        color: darkslategray;
+        background-color: coral;
+
+    }
+    .footer{
+      background-color: rgb(36, 189, 5); 
+      color: rgb(227, 209, 70);
+      font-size: 25px;    
+    }
+/* Selector de tipo ID casi no se usa en desarrollo web solo en cosas avanzadasss */
+#datosTabla{
+    background-color: #ecba82;
+    font-size: 23px;
+}
+
+/* nomenclatura:
+1. camelcase=> letraGrandeOscura
+2. snake_case=> letra_grande_oscura
+3. kebab_case=> letra-grande-oscura
+*/
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+}

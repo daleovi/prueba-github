@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.padreGrid1 div,
+.padreGrid2 div {
+    background-color: darkgoldenrod;
+    border: solid 2px black;
+    font-size: 20px;
+    padding: 5px
+}
+
+.padreGrid1 {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    /* 1fr o 33% o 25% son tmb valores válidos tanto en grids como rows */
+    grid-template-rows: 50px 100px;
+    width: 550px;
+    height: 550px;
+    /* Mover la grilla start end center y space around o space between o space evenly */
+    justify-content: space-around;
+    grid-column-gap: 70px;
+    grid-row-gap: 50px;
+}
+
+/* SECCIÓN 2 */
+.padreGrid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    /* MOVER ELEMENTOS DE LA GRILLA: START end center y stretch */
+    align-items: center;
+    /* start end center stretch */
+    justify-items: center;
+}
+
+.hijo4 {
+    /* Start/end/center/stretch */
+    justify-self: stretch;
+}
+
+.grilla {
+    display: grid;
+    grid-template-areas:
+        "nav header header header"
+        "nav section1 section1 aside"
+        "nav section2 section aside"
+        "nav footer footer footer"
+    ;
+    grid-template-rows: repeat(4, 25%);
+}
+
+.nav {
+    grid-area: nav;
+    background-color: aqua;
+}
+
+.nav p{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    grid-area: header;
+    background-color: blanchedalmond;
+    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyytNVHXqNHNlo4kWtOlEXCtlfsjvQuj1LkPLOFtLfk2WbU_Gwr79W7YNGp_t2CuUsnjU&usqp=CAU');
+    background-size: 50%;
+    background-repeat:no-repeat;
+
+}
+
+.section1 {
+    grid-area: section1;
+    background-color: chocolate;
+    overflow: hidden;
+}
+
+.section2 {
+    grid-area: section2;
+    background-color: violet;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: green;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: deepskyblue;
+    background-image: url('../img/kiwi.jpg')
+}
+
+/* '' */

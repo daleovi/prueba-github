@@ -1,0 +1,85 @@
+/* Reseteo buena práctica */
+*{ 
+margin: 0;
+padding: 0;
+border: 0;    
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.fondoCoral{
+    background-color: coral;
+    display: none;
+}
+
+.block{
+background-color: darkgoldenrod;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+border: solid 4px greenyellow;
+width: 150px;
+height: 150px;
+/* visible/hidden/scroll*/
+overflow: hidden;
+}
+
+.inline{
+background-color: darkolivegreen;
+border: solid 5px #000;
+display: inline-block;
+width: 150px;
+} 
+
+.textoGrande{ 
+font-size: 20px;
+ }
+
+ .parrafo{
+font-size: 18px;
+/* padding-bottom: 50px;
+padding-top: 75px;
+padding-left: 15px;
+padding-right: 36px;
+border-radius: 10px; */
+padding: 75px;
+/* Border */
+border-top: dashed 15px red;
+border-bottom: dotted 10px yellowgreen;
+border-radius: 10px;
+
+/* Margin */
+margin-top: 25px;
+ }
+
+
+.margin { 
+margin: 25px;
+  }
+
+.padding{ 
+  padding: 30px;
+   }
+
+   .cajaAzul { 
+     background-color: blue;
+     width: 150px;
+     height: 150px;
+     }
+
+  .cajaGrande { 
+    background-color: crimson;
+    /* Viewport Width */
+    width: 50vw;
+    /* Viewport Height */
+    height: 25vh;
+  }
+
+  .cajaChiquita{
+    background-color: burlywood;
+    width: 50%;
+    height: 50px;
+    position: relative;
+    left: 169px;
+  }
+
+  video{
+    width: 350px;
+  }
